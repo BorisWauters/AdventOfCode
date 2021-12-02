@@ -8,7 +8,6 @@ import java.util.stream.Stream;
 public class Part1 {
 
     public static void main(String[] args) {
-        // write your code here
         try (Stream<String> stream = Files.lines(Paths.get("input/day1.txt"))) {
             solve(stream.mapToInt(Integer::parseInt).toArray());
         } catch (IOException e) {

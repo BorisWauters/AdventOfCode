@@ -16,7 +16,6 @@ public class Part2 {
     private static final String UP = "up";
 
     public static void main(String[] args) {
-        // write your code here
         try (Stream<String> stream = Files.lines(Paths.get("input/day2.txt"))) {
             solve(stream.toArray(String[]::new));
         } catch (IOException e) {
