@@ -1,11 +1,11 @@
-package com.github;
+package com.github.day4;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
 
-public class Template {
+public class Part1 {
 
     public static void main(String[] args) {
         try (Stream<String> stream = Files.lines(Paths.get("input/test.txt"))) {

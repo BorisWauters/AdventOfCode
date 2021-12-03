@@ -15,7 +15,7 @@ public class Part2 {
         }
     }
 
-    private static void solve(int[] lines) throws IOException {
+    private static void solve(int[] lines) {
         int count = 0;
         int previousSum = lines[0] + lines[1] + lines[2];
         for (int i = 3; i < lines.length; i++) {

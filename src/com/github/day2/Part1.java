@@ -22,7 +22,7 @@ public class Part1 {
         }
     }
 
-    private static void solve(String[] lines) throws IOException {
+    private static void solve(String[] lines) {
         for (String line : lines) {
             String[] values = line.split(" ");
 

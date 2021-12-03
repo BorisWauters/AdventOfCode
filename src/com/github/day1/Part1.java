@@ -15,7 +15,7 @@ public class Part1 {
         }
     }
 
-    private static void solve(int[] lines) throws IOException {
+    private static void solve(int[] lines) {
         int count = 0;
         int line = lines[0];
         for (int i = 1; i < lines.length; i++) {
