@@ -1,4 +1,4 @@
-package com.github.day2;
+package com.github.day02;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -15,7 +15,7 @@ public class Part1 {
     private static final String UP = "up";
 
     public static void main(String[] args) {
-        try (Stream<String> stream = Files.lines(Paths.get("input/day2.txt"))) {
+        try (Stream<String> stream = Files.lines(Paths.get("input/day02.txt"))) {
             solve(stream.toArray(String[]::new));
         } catch (IOException e) {
             System.err.println(e.getLocalizedMessage());

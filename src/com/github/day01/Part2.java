@@ -1,4 +1,4 @@
-package com.github.day1;
+package com.github.day01;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 public class Part2 {
 
     public static void main(String[] args) {
-        try (Stream<String> stream = Files.lines(Paths.get("input/day1.txt"))) {
+        try (Stream<String> stream = Files.lines(Paths.get("input/day01.txt"))) {
             solve(stream.mapToInt(Integer::parseInt).toArray());
         } catch (IOException e) {
             System.err.println(e.getLocalizedMessage());
