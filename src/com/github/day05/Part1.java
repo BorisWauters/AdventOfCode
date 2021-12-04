@@ -1,4 +1,4 @@
-package com.github.day4;
+package com.github.day05;
 
 import java.io.IOException;
 import java.nio.file.Files;
