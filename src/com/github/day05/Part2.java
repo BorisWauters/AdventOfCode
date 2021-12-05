@@ -10,7 +10,7 @@ import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Stream;
 
-public class Part1 {
+public class Part2 {
 
     private static final Map<String, Integer> diagram = new HashMap<>();
 
@@ -33,8 +33,8 @@ public class Part1 {
             }
         }
         AtomicInteger count = new AtomicInteger();
-        diagram.forEach((k,v) -> {
-            if(v > 1) {
+        diagram.forEach((k, v) -> {
+            if (v > 1) {
                 count.getAndIncrement();
             }
         });
@@ -46,28 +46,22 @@ public class Part1 {
 
         int[] beginPoint = Arrays.stream(begin.split(",")).mapToInt(Integer::parseInt).toArray();
         int[] endPoint = Arrays.stream(end.split(",")).mapToInt(Integer::parseInt).toArray();
+
         int deltaX = endPoint[0] - beginPoint[0];
         int deltaY = endPoint[1] - beginPoint[1];
 
-        if (deltaX != 0 && deltaY == 0) {
-            //Horizontal lines
-            int factor = deltaX > 0 ? 1 : -1;
-            for (int i = 1; i < Math.abs(deltaX); i++) {
-                int[] point = new int[]{beginPoint[0] + i * factor, beginPoint[1]};
-                result.add(point[0] + "," + point[1]);
-            }
-        } else if (deltaX == 0 && deltaY != 0) {
-            //Vertical lines
-            int factor = deltaY > 0 ? 1 : -1;
-            for (int i = 1; i < Math.abs(deltaY); i++) {
-                int[] point = new int[]{beginPoint[0], beginPoint[1] + i * factor};
-                result.add(point[0] + "," + point[1]);
-            }
-        } else if (deltaX != 0 && deltaY != 0) {
-            //Diagonal lines
-            return Set.of();
-        }
+        int xFactor = Integer.compare(deltaX, 0);
+        int yFactor = Integer.compare(deltaY, 0);
 
+        int numberOfIterations = Math.max(Math.abs(deltaX), Math.abs(deltaY));
+        for (int i = 1; i < numberOfIterations; i++) {
+            result.add(createPoint(beginPoint[0], beginPoint[1], xFactor, yFactor, i));
+        }
         return result;
+    }
+
+    private static String createPoint(int x, int y, int xFactor, int yFactor, int i) {
+        int[] point = new int[]{x + i * xFactor, y + i * yFactor};
+        return point[0] + "," + point[1];
     }
 }
