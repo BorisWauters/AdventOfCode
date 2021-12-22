@@ -13,9 +13,9 @@ import java.util.stream.Stream;
  * The second part of the exercise was one of the more challenging ones.
  *
  * This exercise was solved by iterating over all steps in reverse order so already visited cuboids could be ignored.
- * This was done by keeping a set of non-overlapping cuboids to ignore.
- * When a cuboid was overlapping with another to-avoid cuboid, the cuboid was split into multiple cuboids leaving overlapping part out.
- * The newly split cuboids are used to update the sum and are added to the to-avoid set.
+ * This was done by keeping a set of non-overlapping cuboids to ignore in further steps.
+ * When a cuboid was overlapping with another to-avoid-cuboid, the cuboid was split into multiple cuboids leaving the overlapping part out.
+ * The newly split cuboids are used to update the sum and are than added to the to-avoid set.
  * */
 public class Part2 {
 
