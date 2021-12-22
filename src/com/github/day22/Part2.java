@@ -10,10 +10,10 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * This exercise was one of the more challenging ones.
+ * The second part of the exercise was one of the more challenging ones.
  *
  * This exercise was solved by iterating over all steps in reverse order so already visited cuboids could be ignored.
- * THis was done by keeping a set of non-overlapping cuboids to ignore.
+ * This was done by keeping a set of non-overlapping cuboids to ignore.
  * When a cuboid was overlapping with another to-avoid cuboid, the cuboid was split into multiple cuboids leaving overlapping part out.
  * The newly split cuboids are used to update the sum and are added to the to-avoid set.
  * */
