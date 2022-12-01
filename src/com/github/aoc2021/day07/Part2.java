@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 public class Part2 {
 
     public static void main(String[] args) {
-        try (Stream<String> stream = Files.lines(Paths.get("input/day07.txt"))) {
+        try (Stream<String> stream = Files.lines(Paths.get("input/aoc2021/day07.txt"))) {
             int[] input = stream.flatMap(s -> Arrays.stream(s.split(","))).mapToInt(Integer::parseInt).toArray();
             solve(input);
         } catch (IOException e) {

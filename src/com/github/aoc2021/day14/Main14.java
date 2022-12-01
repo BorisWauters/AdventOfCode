@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 public class Main14 {
 
     public static void main(String[] args) {
-        try (Stream<String> stream = Files.lines(Paths.get("input/day14.txt"))) {
+        try (Stream<String> stream = Files.lines(Paths.get("input/aoc2021/day14.txt"))) {
             solve(stream.toArray(String[]::new), 40);
         } catch (IOException e) {
             System.err.println(e.getLocalizedMessage());

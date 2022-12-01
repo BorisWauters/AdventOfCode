@@ -30,7 +30,7 @@ public class Part1 {
     );
 
     public static void main(String[] args) {
-        try (Stream<String> stream = Files.lines(Paths.get("input/day16.txt"))) {
+        try (Stream<String> stream = Files.lines(Paths.get("input/aoc2021/day16.txt"))) {
             solve(stream.findFirst().orElseThrow());
         } catch (IOException e) {
             System.err.println(e.getLocalizedMessage());
