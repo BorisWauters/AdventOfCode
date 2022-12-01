@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 import java.util.stream.Stream;
 
 public class Part1 {
-    
+
     public static void main(String[] args) {
         try (Stream<String> stream = Files.lines(Paths.get("input/aoc2022/day01.txt"))) {
             solve(stream.toArray(String[]::new));
@@ -19,7 +19,7 @@ public class Part1 {
         int maxSum = 0;
         int currentSum = 0;
         for (String line : lines) {
-            if(line.isBlank()) {
+            if (line.isBlank()) {
                 maxSum = Math.max(maxSum, currentSum);
                 currentSum = 0;
             } else {
