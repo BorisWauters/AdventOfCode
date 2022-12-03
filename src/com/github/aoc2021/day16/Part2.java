@@ -46,7 +46,7 @@ public class Part2 {
     private static int handlePacket(String binary) {
         if (!binary.contains("1")) return 0;
 
-        int version = binaryToInt(binary.substring(0, 3));
+        //int version = binaryToInt(binary.substring(0, 3)); //not used
         int id = binaryToInt(binary.substring(3, 6));
         String packet = binary.substring(6);
 
