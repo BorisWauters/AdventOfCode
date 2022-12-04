@@ -26,8 +26,6 @@ public class Part1 {
         int yMin = Integer.parseInt(yContent[0]);
         int yMax = Integer.parseInt(yContent[1]);
 
-        System.out.println(xMin + ", " + xMax + " | " + yMin + ", " + yMax);
-
         // assuming y is always negative
         for (int y = yMin; y <= yMax; y++) {
             int dy = Math.abs(y) - 1;
@@ -59,7 +57,6 @@ public class Part1 {
                     }
 
                     if (sum == x) {
-                        System.out.println("y = " + y + ", x = " + x + ", nos = " + numberOfSteps + ", top = " + top);
                         System.out.println(calculateYMax(dy, numberOfSteps));
                         return;
                     }
@@ -70,7 +67,6 @@ public class Part1 {
                         sum += i;
 
                         if (sum == x) {
-                            System.out.println("y = " + y + ", x = " + x + ", nos = " + numberOfSteps + ", top = " + i);
                             System.out.println(calculateYMax(dy, numberOfSteps));
                             return;
                         } else if (sum > x) {
