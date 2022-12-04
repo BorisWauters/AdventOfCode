@@ -16,7 +16,7 @@ public class Template {
     }
 
     private static void solve(String[] lines) {
-        for (int i = 0; i < lines.length; i++) {
+        for (String line : lines) {
             //todo
         }
     }
