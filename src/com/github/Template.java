@@ -18,6 +18,7 @@ public class Template {
     private static void solve(String[] lines) {
         for (String line : lines) {
             //todo
+            System.out.println(line);
         }
     }
 }
