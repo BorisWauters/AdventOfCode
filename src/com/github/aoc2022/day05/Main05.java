@@ -34,7 +34,7 @@ public class Main05 {
                 if (c != ' ') {
                     crateMover9000.add(i, c);
                     crateMover9001.add(i, c);
-                } 
+                }
             }
         }
 
@@ -62,8 +62,6 @@ public class Main05 {
         }
         throw new RuntimeException("Illegal input");
     }
-
-    
 }
 
 abstract class CrateMover {
@@ -86,7 +84,7 @@ abstract class CrateMover {
             System.out.print(row.peek());
         }
     }
-    
+
     public abstract void move(int amount, int from, int to);
 }
 
