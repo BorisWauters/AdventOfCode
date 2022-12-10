@@ -3,8 +3,8 @@ package com.github.helper;
 import java.util.Objects;
 
 class Pair<A, B> {
-    private final A a;
-    private final B b;
+    private A a;
+    private B b;
 
     public Pair(A a, B b) {
         this.a = a;
@@ -17,6 +17,19 @@ class Pair<A, B> {
 
     public B getB() {
         return b;
+    }
+
+    public void setA(A a) {
+        this.a = a;;
+    }
+
+    public void setB(B b) {
+        this.b = b;
+    }
+
+    @Override
+    public String toString() {
+        return a + ", " + b;
     }
 
     @Override
