@@ -25,7 +25,7 @@ public class Part1 {
 
     private static void solve(String[] lines) {
         int y = 2000000;
-        List<Position> positions = new ArrayList<>();
+        List<BeaconPosition> positions = new ArrayList<>();
         for (String line : lines) {
             List<Integer> list = Arrays.stream(line.split(" "))
                     .map(s -> s.replace(",", ""))
@@ -36,7 +36,7 @@ public class Part1 {
                     .map(Integer::parseInt)
                     .collect(Collectors.toList());
 
-            positions.add(new Position(list.get(0), list.get(1), list.get(2), list.get(3)));
+            positions.add(new BeaconPosition(list.get(0), list.get(1), list.get(2), list.get(3)));
         }
 
         Set<Integer> set = new HashSet<>();
