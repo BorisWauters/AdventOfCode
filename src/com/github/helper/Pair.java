@@ -2,7 +2,7 @@ package com.github.helper;
 
 import java.util.Objects;
 
-class Pair<A, B> {
+public class Pair<A, B> {
     private A a;
     private B b;
 
@@ -20,7 +20,7 @@ class Pair<A, B> {
     }
 
     public void setA(A a) {
-        this.a = a;;
+        this.a = a;
     }
 
     public void setB(B b) {
