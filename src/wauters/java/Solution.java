@@ -1,4 +1,4 @@
-package com.github;
+package wauters.java;
 
 public abstract class Solution {
 
