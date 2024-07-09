@@ -1,4 +1,4 @@
-package com.github.aoc2022.day09;
+package wauters.java.aoc2022.day09;
 
 public class Move {
     final String direction;

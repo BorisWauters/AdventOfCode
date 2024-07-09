@@ -1,4 +1,4 @@
-package com.github.aoc2023.day05;
+package wauters.java.aoc2023.day05;
 
 import java.util.*;
 

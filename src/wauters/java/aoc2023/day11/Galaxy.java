@@ -1,4 +1,4 @@
-package com.github.aoc2023.day11;
+package wauters.java.aoc2023.day11;
 
 import java.util.Set;
 

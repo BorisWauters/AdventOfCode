@@ -1,6 +1,6 @@
-package com.github.aoc2023.day02;
+package wauters.java.aoc2023.day02;
 
-import com.github.Solution;
+import wauters.java.Solution;
 
 public class Part2 extends Solution {
     @Override

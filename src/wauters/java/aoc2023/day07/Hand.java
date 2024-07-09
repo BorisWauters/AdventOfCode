@@ -1,4 +1,4 @@
-package com.github.aoc2023.day07;
+package wauters.java.aoc2023.day07;
 
 import java.util.EnumMap;
 import java.util.Map;

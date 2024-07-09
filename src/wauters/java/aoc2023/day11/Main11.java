@@ -1,6 +1,6 @@
-package com.github.aoc2023.day11;
+package wauters.java.aoc2023.day11;
 
-import com.github.Solution;
+import wauters.java.Solution;
 
 import java.util.HashSet;
 import java.util.Set;

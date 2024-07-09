@@ -1,4 +1,4 @@
-package com.github.aoc2022.day06;
+package wauters.java.aoc2022.day06;
 
 import java.io.IOException;
 import java.nio.file.Files;

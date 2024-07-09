@@ -1,4 +1,4 @@
-package com.github.aoc2022.day16;
+package wauters.java.aoc2022.day16;
 
 import java.util.Arrays;
 import java.util.HashMap;

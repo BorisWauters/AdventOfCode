@@ -1,4 +1,4 @@
-package com.github.aoc2022.day14;
+package wauters.java.aoc2022.day14;
 
 public enum Tyle {
     AIR, ROCK, SAND;

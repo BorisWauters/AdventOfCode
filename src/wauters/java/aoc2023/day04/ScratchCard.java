@@ -1,4 +1,4 @@
-package com.github.aoc2023.day04;
+package wauters.java.aoc2023.day04;
 
 public class ScratchCard {
     private final int id;

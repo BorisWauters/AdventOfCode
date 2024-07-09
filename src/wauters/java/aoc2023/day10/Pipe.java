@@ -1,4 +1,4 @@
-package com.github.aoc2023.day10;
+package wauters.java.aoc2023.day10;
 
 public enum Pipe {
     VERTICAL('|'),

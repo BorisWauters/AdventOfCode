@@ -1,4 +1,4 @@
-package com.github.aoc2022.day13;
+package wauters.java.aoc2022.day13;
 
 import java.util.ArrayList;
 import java.util.List;

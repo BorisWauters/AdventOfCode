@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 public class Launcher {
 
     public static void main(String[] args) {
-        Solution solution = new com.github.aoc2023.day01.Part2();
+        Solution solution = new wauters.java.aoc2023.day01.Part2();
 
         try (Stream<String> stream = Files.lines(Paths.get(solution.input))) {
             solution.solve(stream.toArray(String[]::new));

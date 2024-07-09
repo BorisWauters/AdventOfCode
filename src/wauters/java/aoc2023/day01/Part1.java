@@ -1,6 +1,6 @@
-package com.github.aoc2023.day01;
+package wauters.java.aoc2023.day01;
 
-import com.github.Solution;
+import wauters.java.Solution;
 
 public class Part1 extends Solution {
 

@@ -1,6 +1,6 @@
-package com.github.aoc2023.day07;
+package wauters.java.aoc2023.day07;
 
-import com.github.Solution;
+import wauters.java.Solution;
 
 import java.util.ArrayList;
 import java.util.List;

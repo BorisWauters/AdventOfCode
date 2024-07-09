@@ -1,4 +1,4 @@
-package com.github.aoc2021.day15;
+package wauters.java.aoc2021.day15;
 
 public class Point {
     public final int i;
